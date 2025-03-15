@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+      <div class="container">
+        <h1>Hotel Menu</h1>
+
+        <div class="order-info">
+            <label for="table-number">Table Number:</label>
+            <input type="number" id="table-number" min="1" max="20" placeholder="Enter Table No." required>
+        </div> 
+
+        <div class="menu">
+            <div class="menu-section">
+                <h2>Punjabi Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Dal Makhani</span> <span>₹180</span> <button onclick="addToOrder('Dal Makhani', 180)">Add</button></li>
+                    <li><span>Palak Paneer</span> <span>₹220</span> <button onclick="addToOrder('Palak Paneer', 220)">Add</button></li>
+                    <li><span>Chole Bhature</span> <span>₹150</span> <button onclick="addToOrder('Chole Bhature', 150)">Add</button></li>
+                    <li><span>Paneer Butter Masala</span> <span>₹240</span> <button onclick="addToOrder('Paneer Butter Masala', 240)">Add</button></li>
+                    <li><span>Vegetable Biryani</span> <span>₹200</span> <button onclick="addToOrder('Vegetable Biryani', 200)">Add</button></li>
+                    <li><span>Rajma Chawal</span> <span>₹160</span> <button onclick="addToOrder('Rajma Chawal', 160)">Add</button></li>
+                    <li><span>Aloo Gobi</span> <span>₹120</span> <button onclick="addToOrder('Aloo Gobi', 120)">Add</button></li>
+                    <li><span>Vegetable Curry</span> <span>₹150</span> <button onclick="addToOrder('Vegetable Curry', 150)">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2>South Indian Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Masala Dosa</span> <span>₹100</span> <button onclick="addToOrder('Masala Dosa', 100)">Add</button></li>
+                    <li><span>Idli</span> <span>₹80</span> <button onclick="addToOrder('Idli', 80)">Add</button></li>
+                    <li><span>Sambar Rice</span> <span>₹150</span> <button onclick="addToOrder('Sambar Rice', 150)">Add</button></li>
+                    <li><span>Vegetable Kurma</span> <span>₹120</span> <button onclick="addToOrder('Vegetable Kurma', 120)">Add</button></li>
+                    <li><span>Upma</span> <span>₹90</span> <button onclick="addToOrder('Upma', 90)">Add</button></li>
+                    <li><span>Curd Rice</span> <span>₹100</span> <button onclick="addToOrder('Curd Rice', 100)">Add</button></li>
+                    <li><span>Rasam</span> <span>₹70</span> <button onclick="addToOrder('Rasam', 70)">Add</button></li>
+                    <li><span>Paneer Tikka</span> <span>₹220</span> <button onclick="addToOrder('Paneer Tikka', 220)">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2>Bengali Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Shorshe Ilish</span> <span>₹300</span> <button onclick="addToOrder('Shorshe Ilish', 300)">Add</button></li>
+                    <li><span>Cholar Dal</span> <span>₹120</span> <button onclick="addToOrder('Cholar Dal', 120)">Add</button></li>
+                    <li><span>Alur Dom</span> <span>₹150</span> <button onclick="addToOrder('Alur Dom', 150)">Add</button></li>
+                    <li><span>Beguni</span> <span>₹80</span> <button onclick="addToOrder('Beguni', 80)">Add</button></li>
+                    <li><span>Mishti Doi</span> <span>₹90</span> <button onclick="addToOrder('Mishti Doi', 90)">Add</button></li>
+                    <li><span>Vegetable Chop</span> <span>₹100</span> <button onclick="addToOrder('Vegetable Chop', 100)">Add</button></li>
+                    <li><span>Bhapa Ilish</span> <span>₹280</span> <button onclick="addToOrder('Bhapa Ilish', 280)">Add</button></li>
+                    <li><span>Chingri Malai Curry</span> <span>₹320</span> <button onclick="addToOrder('Chingri Malai Curry', 320)">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2>Rajasthani Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Dal Baati Churma</span> <span>₹220</span> <button onclick="addToOrder('Dal Baati Churma', 220)">Add</button></li>
+                    <li><span>Gatte Ki Sabzi</span> <span>₹180</span> <button onclick="addToOrder('Gatte Ki Sabzi', 180)">Add</button></li>
+                    <li><span>Ker Sangri</span> <span>₹200</span> <button onclick="addToOrder('Ker Sangri', 200)">Add</button></li>
+                    <li><span>Besan Gatta</span> <span>₹190</span> <button onclick="addToOrder('Besan Gatta', 190)">Add</button></li>
+                    <li><span>Rajasthani Kadhi</span> <span>₹160</span> <button onclick="addToOrder('Rajasthani Kadhi', 160)">Add</button></li>
+                    <li><span>Dal Khichdi</span> <span>₹150</span> <button onclick="addToOrder('Dal Khichdi', 150)">Add</button></li>
+                    <li><span>Paneer Gatta</span> <span>₹240</span> <button onclick="addToOrder('Paneer Gatta', 240)">Add</button></li>
+                    <li><span>Baingan Bharta</span> <span>₹170</span> <button onclick="addToOrder('Baingan Bharta', 170)">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2>Gujarati Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Dhokla</span> <span>₹120</span> <button onclick="addToOrder('Dhokla', 120)">Add</button></li>
+                    <li><span>Undhiyu</span> <span>₹250</span> <button onclick="addToOrder('Undhiyu', 250)">Add</button></li>
+                    <li><span>Dal Dhokli</span> <span>₹180</span> <button onclick="addToOrder('Dal Dhokli', 180)">Add</button></li>
+                    <li><span>Kadhi</span> <span>₹150</span> <button onclick="addToOrder('Kadhi', 150)">Add</button></li>
+                    <li><span>Khichdi</span> <span>₹130</span> <button onclick="addToOrder('Khichdi', 130)">Add</button></li>
+                    <li><span>Sev Tameta</span> <span>₹140</span> <button onclick="addToOrder('Sev Tameta', 140)">Add</button></li>
+                    <li><span>Fafda</span> <span>₹100</span> <button onclick="addToOrder('Fafda', 100)">Add</button></li>
+                    <li><span>Bhindi Sambhariya</span> <span>₹160</span> <button onclick="addToOrder('Bhindi Sambhariya', 160)">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2>Hyderabadi Cuisine</h2>
+                <h4>Main Course (Veg)</h4>
+                <ul>
+                    <li><span>Hyderabadi Biryani</span> <span>₹300</span> <button onclick="addToOrder('Hyderabadi Biryani', 300)">Add</button></li>
+                    <li><span>Bagara Baingan</span> <span>₹180</span> <button onclick="addToOrder('Bagara Baingan', 180)">Add</button></li>
+                    <li><span>Vegetable Biryani</span> <span>₹250</span> <button onclick="addToOrder('Vegetable Biryani', 250)">Add</button></li>
+                    <li><span>Mirchi Ka Salan</span> <span>₹200</span> <button onclick="addToOrder('Mirchi Ka Salan', 200)">Add</button></li>
+                    <li><span>Dalcha</span> <span>₹160</span> <button onclick="addToOrder('Dalcha', 160)">Add</button></li>
+                    <li><span>Hyderabadi Vegetable Curry</span> <span>₹220</span> <button onclick="addToOrder('Hyderabadi Vegetable Curry', 220)">Add</button></li>
+                    <li><span>Pulao</span> <span>₹250</span> <button onclick="addToOrder('Pulao', 250)">Add</button></li>
+                    <li><span>Sambar Rice</span> <span>₹180</span> <button onclick="addToOrder('Sambar Rice', 180)">Add</button></li>
+                </ul>
+            </div>
+        </div>
+      <div class="menu-section">
+    <h2>Maharashtra Cuisine</h2>
+    <h4>Main Course (Veg)</h4>
+    <ul>
+        <li><span>Puran Poli</span> <span>₹120</span> <button onclick="addToOrder('Puran Poli', 120)">Add</button></li>
+        <li><span>Vada Pav</span> <span>₹50</span> <button onclick="addToOrder('Vada Pav', 50)">Add</button></li>
+        <li><span>Misal Pav</span> <span>₹80</span> <button onclick="addToOrder('Misal Pav', 80)">Add</button></li>
+        <li><span>Bhel Puri</span> <span>₹60</span> <button onclick="addToOrder('Bhel Puri', 60)">Add</button></li>
+        <li><span>Pithla Bhakri</span> <span>₹150</span> <button onclick="addToOrder('Pithla Bhakri', 150)">Add</button></li>
+        <li><span>Sabudana Khichdi</span> <span>₹120</span> <button onclick="addToOrder('Sabudana Khichdi', 120)">Add</button></li>
+        <li><span>Batata Wada</span> <span>₹40</span> <button onclick="addToOrder('Batata Wada', 40)">Add</button></li>
+        <li><span>Paneer Bhurji</span> <span>₹180</span> <button onclick="addToOrder('Paneer Bhurji', 180)">Add</button></li>
+    </ul>
+</div>
+ <div class="menu-section">
+    <h2>Non-Vegetarian Cuisine</h2>
+    <h4>Main Course (Non-Veg)</h4>
+    <ul>
+        <li><span>Butter Chicken</span> <span>₹350</span> <button onclick="addToOrder('Butter Chicken', 350)">Add</button></li>
+        <li><span>Tandoori Chicken</span> <span>₹400</span> <button onclick="addToOrder('Tandoori Chicken', 400)">Add</button></li>
+        <li><span>Fish Curry</span> <span>₹300</span> <button onclick="addToOrder('Fish Curry', 300)">Add</button></li>
+        <li><span>Lamb Rogan Josh</span> <span>₹450</span> <button onclick="addToOrder('Lamb Rogan Josh', 450)">Add</button></li>
+        <li><span>Chicken Biryani</span> <span>₹350</span> <button onclick="addToOrder('Chicken Biryani', 350)">Add</button></li>
+        <li><span>Prawn Masala</span> <span>₹400</span> <button onclick="addToOrder('Prawn Masala', 400)">Add</button></li>
+        <li><span>Mutton Korma</span> <span>₹500</span> <button onclick="addToOrder('Mutton Korma', 500)">Add</button></li>
+        <li><span>Egg Curry</span> <span>₹200</span> <button onclick="addToOrder('Egg Curry', 200)">Add</button></li>
+    </ul>
+</div>
+       
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <ul id="order-list"></ul>
+            <div class="total">Total: ₹<span id="total-price">0</span></div>
+            <div class="payment-methods">
+                <h3>Payment Method</h3>
+                <label>
+                    <input type="radio" name="payment" value="debit-card" onclick="showPaymentFields('debit-card')"> Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="credit-card" onclick="showPaymentFields('credit-card')"> Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="upi" onclick="showPaymentFields('upi')"> UPI
+                </label>
+
+                <div id="payment-fields" style="display: none;">
+                    <div id="debit-card-fields" style="display: none;">
+                        <label for="debit-card-number">Debit Card Number:</label>
+                        <input type="text" id="debit-card-number" placeholder="Enter Debit Card Number" pattern="\d{12}" maxlength="12">
+                    </div>
+                    <div id="credit-card-fields" style="display: none;">
+                        <label for="credit-card-number">Credit Card Number:</label>
+                        <input type="text" id="credit-card-number" placeholder="Enter Credit Card Number" pattern="\d{12}" maxlength="12">
+                    </div>
+                    <div id="upi-fields" style="display: none;">
+                        <label for="upi-id">UPI ID:</label>
+                        <input type="text" id="upi-id" placeholder="Enter UPI ID">
+                    </div>
+                </div>
+            </div>
+            <button class="submit-button" onclick="submitOrder()">Submit Order</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

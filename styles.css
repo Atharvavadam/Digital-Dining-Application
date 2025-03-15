@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.order-info {
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-section li span {
+    flex: 1;
+}
+
+.menu-section li button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-section li button:hover {
+    background-color: #0056b3;
+}
+
+.order-summary {
+    border-top: 2px solid #007BFF;
+    padding-top: 20px;
+}
+
+.order-summary h2 {
+    margin-bottom: 10px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.payment-methods {
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
